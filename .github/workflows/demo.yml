@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Datei erstellen
-        run: date '+%e.%m.%Y: %A, %j. Tag im Jahr, liegt in Kalenderwoche %V.' > datum.txt
+        run: |
+          date '+%e.%m.%Y: %A, %j. Tag im Jahr, liegt in Kalenderwoche %V.' > datum.txt
       - name: Datei hochladen
         uses: actions/upload-artifact@v3
         with:
