@@ -5,14 +5,14 @@ on:
       - master
 jobs:
   job-apk-bauen:
-    name: Debug-APK bauen
+    name: Demo-Job
     runs-on: ubuntu-latest
     steps:
       - name: Datei erstellen
         run: |
           date '+%e.%m.%Y: %A, %j. Tag im Jahr, liegt in Kalenderwoche %V.' > datum.txt
       - name: Datei hochladen
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ergebnis
           path: datum.txt
