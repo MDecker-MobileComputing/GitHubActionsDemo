@@ -17,4 +17,10 @@ Hierzu wird folgende Linux-Befehl ausgeführt:
 date '+%e.%m.%Y: %A, %j. Tag im Jahr, liegt in Kalenderwoche %V.' > datum.txt
 ```
 
+
+Beispielausgabe:
+```
+23.02.2024: Friday, 054. Tag im Jahr, liegt in Kalenderwoche 08.
+```
+
 <br>
